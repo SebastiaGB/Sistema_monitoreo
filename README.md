@@ -58,6 +58,8 @@ La base de datos almacena los datos obtenidos por los sensores mediate los scrip
 
 ## 💻 Scripts Java para Procesamiento de Datos
 
+Creación de dos programas unio para obtener, decodificar y almacenar datos y otro para calcular los paquetes perdido  mensualmente. 
+
 ### 🔍 `Decoder.java`
 
 - Obtiene paquetes del gateway
