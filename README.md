@@ -98,12 +98,10 @@ Dos programas desarrollados en Java:
 
 ## 📊 Visualización con Grafana
 
-Dashboards personalizados para centros geolocalizados:
+Obtiene los datos de la DB para poder mostrarlos en forma de gráficas y parametros interactivos en tiempo real para poder llevar un control de dichos datos con dashboards personalizados para centros geolocalizados.
 
-- 🌍 Mapa de dispositivos distribuidos en Mallorca.
-- **Centro 1**: SenseCap S2101, Dragino CPL01, AM107.
-- **Centro 2**: EM320, Adeunis Motion V2.
-- **Centro 3**: WS202, EM500.
+- 🌍 Mapa de dispositivos distribuidos en Mallorca
+- ⚠️ La ubicación recreada de los centros es falsa
 
 📁 `Grafana/` → Exportación de dashboards en formato `.json`.
 
