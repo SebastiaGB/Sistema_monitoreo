@@ -1,31 +1,75 @@
 
- Se detalla la relación entre las tablas de la base de datos del proyecto utilizando el
- diagrama de datos presentado a continuación para una mejor comprensión del diseño.
- Labasededatos,denominadaiotib2,constadesietetablas:data,centros,paquetesperdidos,
- milesight_payload, adeunis_payload, senseCap_payloadydragino_payload.
- Tres atributos principales, id, devEUI y payload, se utilizan para relacionar las tablas.
- Aunquecadatabla contiene más atributos, estos tres son los comunes y se describirán
- endetalle en el siguiente capítulo.
- La Figura 3.1 muestra un diagrama de datos con todas las tablas de la base de da
-tos.
- La tabla centros almacena los nombres de los centros simulados en las Baleares,
- junto con la LatitudyLongitud,ylossensores decadacentro.
- La tabla data guarda tanto los uplinks como los downlinks de los dispositivos. Los
- atributos se organizan en columnas, representando cada fila un paquete completo de
- undispositivo. Estos paquetes se identifican por una id que se incrementa de forma
- ascendente. El asterisco indica que la tabla posee la id de todos los dispositivos. La
- devEUIidentifica a qué dispositivo pertenece cada paquete y la direction determina
- si es un uplink o downlink. Estos atributos son clave para identificar cada paquete y de
-21
-3. DISEÑO DEL SEGUNDO BLOQUE: BASE DE DATOS, SCRIPTS Y GRAFANA
- Figura 3.1: Diagrama de Bloques Funcional Decoder, Gateway_prueba
- terminar en qué tabla adicional se debe almacenar. Counter se utiliza para determinar
- el orden de los uplinks.
- La tabla paquetesperdidos registra la cantidad de paquetes perdidos cada mes en
- forma deporcentaje. Utiliza la id de todos los uplinks de data para identificarlos y la
- devEUIparaidentificar el dispositivo correspondiente.
- Los uplinks se almacenan enlas tablas específicas a medida que ingresan en data, de
- maneraordenada.
- Lastablasmilesight_payload,adeunis_payload,sensecap_payloadydragino_payload
- contienen los tres atributos mostrados en el diagrama 3.1 para los uplinks de dispositi
-vos del fabricante correspondiente al nombre de la tabla.
+# 📚 Estructura de la Base de Datos
+
+Este apartado documenta el diseño y la relación entre las tablas utilizadas en la base de datos del proyecto. Para facilitar la comprensión, se incluye el diagrama de bloques en la imagen `DiagramaDB.jpg`.
+
+---
+
+## 🧩 Tablas de la Base de Datos
+
+La base de datos consta de **siete tablas** principales:
+
+- `data`
+- `centros`
+- `paquetesperdidos`
+- `milesight_payload`
+- `adeunis_payload`
+- `senseCap_payload`
+- `dragino_payload`
+
+Estas tablas se relacionan principalmente mediante **tres atributos clave**:
+
+- `id`
+- `devEUI`
+- `payload`
+
+Aunque cada tabla contiene más columnas, estos tres atributos son comunes y fundamentales para la organización de los datos.
+
+---
+
+## 🗂️ Descripción de las Tablas
+
+### 🏢 `centros`
+
+- Almacena información de los centros simulados en las Islas Baleares.
+- Incluye nombre del centro, latitud, longitud y sensores asociados.
+
+### 📦 `data`
+
+- Contiene los **uplinks** y **downlinks** enviados por los dispositivos.
+- Cada fila representa un paquete completo con una `id` ascendente.
+- Atributos destacados:
+  - `id`: clave única del paquete.
+  - `devEUI`: identifica el dispositivo que lo envía o recibe.
+  - `direction`: define si el paquete es uplink o downlink.
+  - `counter`: permite ordenar los uplinks en secuencia.
+
+### 📉 `paquetesperdidos`
+
+- Registra la pérdida mensual de paquetes en **porcentaje**.
+- Se basa en la `id` de `data` para vincular los registros.
+- El campo `devEUI` permite identificar el dispositivo correspondiente.
+
+---
+
+## 🧾 Tablas de Payload Específico
+
+Las siguientes tablas almacenan los datos decodificados de los uplinks según el fabricante del dispositivo:
+
+- `milesight_payload`
+- `adeunis_payload`
+- `sensecap_payload`
+- `dragino_payload`
+
+Cada una contiene:
+
+- `id` del paquete original en `data`
+- `devEUI` del dispositivo
+- `payload` con los datos específicos del sensor
+
+Estas tablas permiten separar y organizar la información según el tipo de dispositivo, facilitando su interpretación y análisis.
+
+---
+
+📌 **Nota:** La imagen `DiagramaDB.jpg` incluida en esta carpeta muestra gráficamente cómo se relacionan estas tablas entre sí.
+
