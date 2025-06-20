@@ -60,7 +60,7 @@ El sistema permite recopilar en tiempo real variables ambientales como temperatu
 | `paquetesperdidos`   | Análisis de paquetes perdidos                             |
 | `*_payload`          | Tablas específicas por tipo de sensor (e.g., `milesight_payload`, `adeunis_payload`) |
 
-📁 `Data_base/` → Backup con estructura vacía y campos normalizados.
+📁 `DB/` → Backup de la base de datos con estructura vacía (sin datos) y estructura de esta.
 
 ---
 
