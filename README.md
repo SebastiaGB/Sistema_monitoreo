@@ -124,11 +124,3 @@ TFG.pdf                     # Documento completo del trabajo de fin de grado
 ✅ Transmisión fiable y eficiente
 ✅ Visualización en tiempo real y trazabilidad histórica
 ✅ Escalable y adaptable a otros entornos (granjas, edificios, etc.)
-
----
-
-## 📬 Contacto
-
-> Si deseas más información sobre este proyecto o estás interesado en sistemas similares para tu empresa, no dudes en contactarme.
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sebastià_Gamundí_Beneyto-blue?style=flat\&logo=linkedin)](https://www.linkedin.com/in/sebastiagamundi)
