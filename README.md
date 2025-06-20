@@ -26,12 +26,9 @@ El sistema permite recopilar en tiempo real variables ambientales como temperatu
 
 ---
 
-## 🧠 Funcionamiento Técnico
+## LoRa
 
-1. Los sensores transmiten los datos vía LoRa al **gateway**.
-2. El gateway reenvía los paquetes a la red pública IoTIB.
-3. Scripts en **Java** capturan, decodifican y almacenan los datos en **MySQL**.
-4. **Grafana** accede a la base de datos y visualiza los datos mediante dashboards en tiempo real.
+1. Los sensores transmiten los datos vía LoRa al **gateway**. Lora es una tecnología que utiliza tres claves para implenetar su segueridad: la deveui, la appeui y la appkey, la appeui es menos usada ya que en la mayoria de casos no es necesaria para establecer la conexión pero las otros dos si. La deveui es el identificador único del dispositivo proporcionado por el fabricante y la appkey es una cvlave de 32 bites a veces proporcionada por el fabricante, pero normalmente debe ser creada por el usuario accediendo al dispositivo. Estas claves se usarán para conectar los dispositivos al gateway. 
 
 ---
 
