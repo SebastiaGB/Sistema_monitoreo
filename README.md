@@ -1,5 +1,7 @@
 # 🚁 Monitoreo Remoto de Centros con Tecnología IoT y LoRaWAN
 
+> ⚠️ Proyecto desarrollado durante mi etapa como técnico IoT en colaboración con FUEIB. Esta versión es una **recreación técnica** con fines demostrativos. No incluye datos sensibles ni contraseñas.
+
 Este proyecto implementa una solución de **monitoreo remoto** para centros de telecomunicaciones mediante sensores IoT conectados vía **LoRaWAN** (larga distancia y bajo consumo).  
 Permite recopilar en tiempo real variables como temperatura, humedad, presencia de personas y estado de puertas, facilitando una supervisión eficiente y sostenible.
 
@@ -48,7 +50,7 @@ Para establecer conexión segura, se utilizan tres claves:
 | Adeunis Motion V2   | Adeunis    | Movimiento y luminosidad                       |
 | Milesight EM500     | Milesight  | Temperatura, CO₂, humedad y presión exteriores |
 
-📁 `Documentación_Dispositivos/` → Incluye manuales y guías técnicas para decodificación.
+📁 `Dispositivos/` → Incluye manuales y guías técnicas para decodificación.
 
 ---
 
@@ -103,7 +105,7 @@ Dashboards personalizados para centros geolocalizados:
 - **Centro 2**: EM320, Adeunis Motion V2.
 - **Centro 3**: WS202, EM500.
 
-📁 `JSON_Grafana_Dashboards/` → Exportación de dashboards en formato `.json`.
+📁 `Grafana/` → Exportación de dashboards en formato `.json`.
 
 ---
 
