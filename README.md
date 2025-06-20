@@ -51,14 +51,9 @@ El sistema permite recopilar en tiempo real variables ambientales como temperatu
 
 ---
 
-## 🧾 Estructura de la Base de Datos (MySQL)
+## 🧾 Uso de la  Base de Datos (MySQL)
 
-| Tabla                | Descripción                                                |
-|----------------------|------------------------------------------------------------|
-| `centros`            | Información de cada centro (nombre, ubicación, sensores)   |
-| `data`               | Uplinks y downlinks registrados                           |
-| `paquetesperdidos`   | Análisis de paquetes perdidos                             |
-| `*_payload`          | Tablas específicas por tipo de sensor (e.g., `milesight_payload`, `adeunis_payload`) |
+La base de datos almacena los datos obtenidos por los sensores mediate los scripts java en diferentes tablas para facilitar su gestión.
 
 📁 `DB/` → Backup de la base de datos con estructura vacía (sin datos) y estructura de esta.
 
