@@ -71,7 +71,7 @@ Creación de dos programas unio para obtener, decodificar y almacenar datos y ot
 - Calcula paquetes perdidos por devEUI
 - Guarda la métrica en la tabla correspondiente
 
-📁 `Scrips_Java/` → Contiene clases, documentación y lógica de decodificación.
+📁 `Scrips/` → Contiene clases, documentación y lógica de decodificación.
 
 ---
 
