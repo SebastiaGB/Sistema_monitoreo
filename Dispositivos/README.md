@@ -1,4 +1,4 @@
-# 📚 Documentación de Dispositivos
+# Documentación de Dispositivos
 
 En esta carpeta se incluyen las guías de usuario (datasheets y manuales) de los sensores utilizados en el sistema.
 
