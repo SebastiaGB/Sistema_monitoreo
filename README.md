@@ -83,12 +83,12 @@ La base de datos almacena los datos recibidos desde los sensores a través de lo
 
 Dos programas desarrollados en Java:
 
-### 🔍 `Decoder.java`
+### `Decoder.java`
 - Obtiene paquetes desde el gateway.
 - Decodifica según el tipo de sensor.
 - Almacena los datos en la base de datos.
 
-### 📉 `PaquetesPerdidos.java`
+### `PaquetesPerdidos.java`
 - Calcula los paquetes perdidos por cada dispositivo (devEUI) mensualmente.
 - Almacena el resultado en una tabla específica.
 
@@ -107,7 +107,7 @@ Obtiene los datos de la DB para poder mostrarlos en forma de gráficas y paramet
 
 ---
 
-## 🧰 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **LoRaWAN** (SF12, OTAA, 868 MHz)
 - **Java** para la lógica de backend y decodificación
