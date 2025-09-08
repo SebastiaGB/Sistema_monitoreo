@@ -1,4 +1,4 @@
-# 📜 Explicación de los Scripts
+# Explicación de los Scripts
 
 En la carpeta `Scripts_Java/src/main/java/Iotib` se encuentran dos directorios principales: `decoder` y `paquetesperdidos`. A continuación, se describe brevemente el funcionamiento del código.
 
