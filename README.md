@@ -1,4 +1,4 @@
-# 🚁 Monitoreo Remoto de Centros con Tecnología IoT y LoRaWAN
+# Monitoreo Remoto de Centros con Tecnología IoT y LoRaWAN
 
 > ⚠️ Proyecto desarrollado durante mi etapa como técnico IoT en colaboración con FUEIB. Esta versión es una **recreación técnica** con fines demostrativos. No incluye datos sensibles ni contraseñas.
 
@@ -100,7 +100,7 @@ Dos programas desarrollados en Java:
 
 Obtiene los datos de la DB para poder mostrarlos en forma de gráficas y parametros interactivos en tiempo real para poder llevar un control de dichos datos con dashboards personalizados para centros geolocalizados.
 
-- 🌍 Mapa de dispositivos distribuidos en Mallorca
+-  Mapa de dispositivos distribuidos en Mallorca
 - ⚠️ La ubicación recreada de los centros es falsa
 
 📁 `Grafana/` → Exportación de dashboards en formato `.json`.
@@ -109,11 +109,11 @@ Obtiene los datos de la DB para poder mostrarlos en forma de gráficas y paramet
 
 ## 🧰 Tecnologías Utilizadas
 
-- 🛰️ **LoRaWAN** (SF12, OTAA, 868 MHz)
-- 💻 **Java** para la lógica de backend y decodificación
-- 🗃️ **MySQL** como sistema de almacenamiento de datos
-- 📊 **Grafana** para visualización en tiempo real
-- 📲 Apps: **Milesight Toolbox**, **SenseCAP Mate**, **IOTConfigurator**
+- **LoRaWAN** (SF12, OTAA, 868 MHz)
+- **Java** para la lógica de backend y decodificación
+- **MySQL** como sistema de almacenamiento de datos
+- **Grafana** para visualización en tiempo real
+- Apps: **Milesight Toolbox**, **SenseCAP Mate**, **IOTConfigurator**
 
 ---
 
