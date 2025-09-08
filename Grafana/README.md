@@ -1,4 +1,4 @@
-# 📊 Visualización en Grafana por Centros
+# Visualización en Grafana por Centros
 
 Se ha diseñado una carpeta `Sensores/` en Grafana que contiene **cuatro dashboards**:  
 - **Centro 1**
