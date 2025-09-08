@@ -1,5 +1,5 @@
 
-# 📚 Estructura de la Base de Datos
+# Estructura de la Base de Datos
 
 Este apartado documenta el diseño y la relación entre las tablas utilizadas en la base de datos del proyecto. Para facilitar la comprensión, se incluye el diagrama de bloques en la imagen `DiagramaDB.jpg`.
 
@@ -29,12 +29,12 @@ Aunque cada tabla contiene más columnas, estos tres atributos son comunes y fun
 
 ## 🗂️ Descripción de las Tablas
 
-### 🏢 `centros`
+###  `centros`
 
 - Almacena información de los centros simulados en las Islas Baleares.
 - Incluye nombre del centro, latitud, longitud y sensores asociados.
 
-### 📦 `data`
+### `data`
 
 - Contiene los **uplinks** y **downlinks** enviados por los dispositivos.
 - Cada fila representa un paquete completo con una `id` ascendente.
@@ -44,7 +44,7 @@ Aunque cada tabla contiene más columnas, estos tres atributos son comunes y fun
   - `direction`: define si el paquete es uplink o downlink.
   - `counter`: permite ordenar los uplinks en secuencia.
 
-### 📉 `paquetesperdidos`
+### `paquetesperdidos`
 
 - Registra la pérdida mensual de paquetes en **porcentaje**.
 - Se basa en la `id` de `data` para vincular los registros.
