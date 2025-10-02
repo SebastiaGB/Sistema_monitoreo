@@ -43,29 +43,6 @@ CREATE TABLE `adeunis_payload` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 --
--- Table structure for table `arf8123aa`
---
-CREATE TABLE `arf8123aa` (
-  `ID` int NOT NULL,
-  `DEV_EUI` varchar(23) DEFAULT NULL,
-  `SatelitNumber` int DEFAULT NULL,
-  `Latitud` decimal(10,8) DEFAULT NULL,
-  `Longitude` decimal(10,8) DEFAULT NULL,
-  `Quality` int DEFAULT NULL,
-  `UpCounter` int DEFAULT NULL,
-  `DownCounter` int DEFAULT NULL,
-  `BatteryLevel` int DEFAULT NULL,
-  `Rssi_dl` int DEFAULT NULL,
-  `SNR` int DEFAULT NULL,
-  `ButtonStatus` int DEFAULT NULL,
-  `GPSStatus` int DEFAULT NULL,
-  `UPlinkStatus` int DEFAULT NULL,
-  `DownlinkStatus` int DEFAULT NULL,
-  `BatteryStatus` int DEFAULT NULL,
-  `RSSI_SNR_Status` int DEFAULT NULL,
-  PRIMARY KEY (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
---
 -- Table structure for table `centros`
 --
 CREATE TABLE `centros` (
@@ -135,16 +112,6 @@ CREATE TABLE `dragino_payload` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 --
--- Table structure for table `gateways`
---
-CREATE TABLE `gateways` (
-  `GW_EUI` varchar(23) NOT NULL,
-  `GW_NAME` varchar(20) DEFAULT NULL,
-  `GW_FABRICANTE` varchar(20) DEFAULT NULL,
-  `LOCALITATION` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`GW_EUI`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
---
 -- Table structure for table `milesight_payload`
 --
 CREATE TABLE `milesight_payload` (
@@ -182,31 +149,6 @@ CREATE TABLE `paquetesperdidos` (
   `id` int NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
---
--- Table structure for table `payload`
---
-CREATE TABLE `payload` (
-  `ID` int NOT NULL AUTO_INCREMENT,
-  `DEV_EUI` varchar(23) DEFAULT NULL,
-  `DATA1` varchar(10) DEFAULT NULL,
-  `DATA2` varchar(10) DEFAULT NULL,
-  `DATA3` varchar(10) DEFAULT NULL,
-  `DATA4` varchar(10) DEFAULT NULL,
-  `DATA5` varchar(10) DEFAULT NULL,
-  `DATA6` varchar(10) DEFAULT NULL,
-  `DATA7` varchar(10) DEFAULT NULL,
-  `DATA8` varchar(10) DEFAULT NULL,
-  `DATA9` varchar(10) DEFAULT NULL,
-  `DATA10` varchar(10) DEFAULT NULL,
-  `DATA11` varchar(10) DEFAULT NULL,
-  `DATA12` varchar(10) DEFAULT NULL,
-  `DATA13` varchar(10) DEFAULT NULL,
-  `DATA14` varchar(20) DEFAULT NULL,
-  `DATA15` varchar(10) DEFAULT NULL,
-  `DATA16` varchar(10) DEFAULT NULL,
-  PRIMARY KEY (`ID`),
-  CONSTRAINT `fk_ID` FOREIGN KEY (`ID`) REFERENCES `data` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=6950 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 --
 -- Table structure for table `sensecap_payload`
 --
